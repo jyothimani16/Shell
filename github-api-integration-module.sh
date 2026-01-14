@@ -9,7 +9,7 @@
 # Usage:
 #   Please provide your github token and rest api to the script as input
 #
-#
+#updates description#
 ################################
 
 if [ ${#@} -lt 2 ]; then
@@ -17,7 +17,6 @@ if [ ${#@} -lt 2 ]; then
     exit 1;
 fi
 
-GITHUB_TOKEN=$1
 GITHUB_API_REST=$2
 
 GITHUB_API_HEADER_ACCEPT="Accept: application/vnd.github.v3+json"
@@ -46,3 +45,7 @@ else
 fi
 
 cat $TMPFILE
+:wq!
+
+
+
